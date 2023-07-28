@@ -1,0 +1,16 @@
+name: TimePrize
+version: 1.0.0
+api: [3.0.0, 4.0.0]
+main: leo\timeprize\main
+author: LeoWasCoding
+description: Finish The Missions.
+
+commands:
+  mission:
+    description: Toggle missions for players
+    usage: /mission
+
+permissions:
+  yourplugin.mission:
+    description: Allows players to use /mission command
+    default: op
