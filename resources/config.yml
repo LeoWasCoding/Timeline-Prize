@@ -1,1 +1,26 @@
+# config.yml
 
+# Default message for missions
+default_mission_message: "Complete the mission: {mission_name} - {mission_objective}"
+
+# List of missions
+missions:
+  collect_wheat_seeds:
+    name: "Collect Wheat Seeds"
+    event: "onItemHeld"  # Replace this with the actual event you want to trigger the mission
+    item: "Wheat Seeds"
+    amount: 5
+
+  mine_diamond_ore:
+    name: "Mine Diamond Ore"
+    event: "onBlockBreak"  # Replace this with the actual event you want to trigger the mission
+    item: "Diamond Ore"
+    amount: 3
+
+  kill_mobs:
+    name: "Kill Mobs"
+    event: "onEntityDeath"  # Replace this with the actual event you want to trigger the mission
+    mob: "Zombie"
+    amount: 10
+
+# You can add more missions as needed
